@@ -17,13 +17,13 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #e5e5e5;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
 }
 
-.obal {
+.wrapper {
 	max-width: 960px; /* obsah stránky je omezený do pruhu širokého max. 960px */
 	margin: 0 auto; /* pruh je na stránce vycentrovaný */
 	background: white;
@@ -31,3 +31,100 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.menu__title {
+	font-weight: 700;
+	padding: 20px 20px 20px 40px;
+}
+
+.menu__link {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	padding: 20px;
+}
+
+.menu__link:hover {
+	color: white;
+	background-color: #48418e;
+}
+
+.banner {
+	background-image: url(images/pozadi.jpg);
+	background-size: cover;
+	color: white;
+	min-height: 450px;
+	position: relative;
+}
+
+.banner__title {
+	font-size: 90px;
+	padding: 40px;
+	margin: 0;
+}
+
+.banner__text {
+	font-size: 36px;
+	font-weight: 300;
+	padding-left: 40px;
+	margin: 0;
+}
+
+.banner__photo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.buttons {
+	padding: 40px;
+}
+
+.button {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	border: white 1px solid;
+	border-radius: 5px;
+	padding: 20px;
+	margin-right: 20px;
+}
+
+.button--active {
+	background-color: #48418e;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	margin: 20px;
+}
+
+.column {
+	padding: 20px;
+}
+
+.content__title {
+	font-size: 20px;
+	font-weight: 700;
+	color: #48418e;
+}
+
+.icon {
+	max-width: 70px;
+}
+
+.footer {
+	text-align: center;
+	color: white;
+	background-color: #48418e;
+	padding: 5px;
+}
